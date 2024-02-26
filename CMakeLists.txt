@@ -48,6 +48,7 @@ option(DOUBLE_RAYS "Store ray ends as doubles, so distances can be large" OFF)
 ras_bool_to_int(DOUBLE_RAYS)
 
 # Required packages.
+find_package(PROJ REQUIRED COMPONENTS proj)
 find_package(Eigen3 REQUIRED)
 find_package(libnabo REQUIRED)
 find_package(OpenMP REQUIRED)
